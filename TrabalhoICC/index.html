@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Principal</title>
+</head>
+<body>
+    <h1><mark>-Como utilizar o Git-</mark></h1>
+    <h2>Esse site irá ensinar como usar o sistema de controle<br>
+        do Git e o repositório Github.</h2>
+    <h3>Introdução</h3>
+    <p>Git é uma ferramenta que ajuda a organizar e controlar as mudanças no código de um projeto.<br> 
+        Ela permite que várias pessoas trabalhem juntas sem bagunçar nada, e ainda guarda um histórico<br>
+        de todas as mudanças, facilitando voltar atrás se algo der errado.
+    </p>    
+    
+    <h3>Git  <img src="img/git_logo.png" width="50" height="50"></h3>
+
+    <!-- ... -->
+
+    <p><b>Segue a descrição e explicação dos seguintes comandos do git:</b></p>
+    <ol>
+        <li><b>init:</b><br>Este comando é usado para criar um novo repositório Git em um diretório específico.<br> 
+        Ele inicializa um diretório como um repositório Git, permitindo que você comece a acompanhar as alterações<br>
+        de arquivos e faça commits. Foi utilizado no trabalho digitando <b>git init</b> no prompt de comando dentro de uma<br>
+        chamada TrabalhoICC.</li><br>
+        <li><b>clone:</b><br>O comando clone é usado para criar uma cópia de um repositório Git existente em um novo diretório.<br>
+            Ele copia todo o histórico de commits, ramos e arquivos do repositório original para o novo diretório. Foi utilizado<br>
+             no trabalho digitando <b>git clone https://github.com/RenanCatini/TrabalhoICC.git</b> no prompt de comando.</li><br>
+        <li><b>branch:</b><br>Este comando é usado para criar, listar ou excluir ramos no repositório Git.<br>
+            Um ramo no Git é simplesmente uma referência móvel para um commit.</li><br>
+        <li><b>checkout:</b><br>O comando checkout é usado para alternar entre ramos ou restaurar arquivos de um commit específico.<br>
+            Ele pode ser usado para criar um novo ramo ou alternar entre ramos existentes. Foi utilizado no trabalho digitando<br>
+            <b>git checkout -b temp</b> no prompt de comando para criar e entrar em um ramo temporário. Também foi utilizado quando<br>
+            foi necessário mudar de ramo digitando <b>git checkout "nome do ramo"</b>.<br>
+            </li><br>
+        <li><b>status:</b><br>Este comando mostra o estado atual do repositório Git. Ele exibe informações sobre arquivos não rastreados,<br>
+            arquivos modificados e o estado dos ramos.</li><br>
+        <li><b>diff:</b><br>O comando diff é usado para exibir as diferenças entre dois pontos de dados Git. Isso pode ser entre commits,<br>
+            entre o diretório de trabalho e o índice, ou entre o índice e o commit atual.</li><br>
+        <li><b>add:</b><br>Este comando é usado para adicionar alterações feitas em arquivos ao índice do Git.<br>
+            Isso prepara as alterações para serem incluídas no próximo commit. Foi utizado no trabalho digitando <b>git add .</b><br>
+            no prompt de comando quando foi necessário salvar as alterações para realizar um commit posteriormente.</li><br>
+        <li><b>commit:</b><br>O comando commit é usado para salvar as alterações feitas no repositório Git.<br>
+            Ele cria um novo commit contendo as alterações preparadas com o comando add. Foi utilizado no trabalho<br>
+            digitando <b>git commit -m. "Mensagem de commit"</b></li><br>
+        <li><b>push:</b><br>Este comando é usado para enviar commits locais para um repositório remoto.<br>
+            Ele transfere as alterações locais para o repositório remoto especificado. Foi utilizado no <br>
+            trabalho digitando <b>git push</b> no prompt de comando para atualizar o repositório no github.</li><br>
+        <li><b>pull:</b><br> O comando pull é usado para recuperar as alterações de um repositório remoto e mesclá-las com o repositório local.<br>
+            Ele é uma combinação dos comandos fetch e merge. Foi utilizado no trabalho digitando  <b>git pull</b><br>
+            para atualizar um repositório local de acordo com o repositório no github.</li><br>           
+        <li><b>revert:</b><br>Este comando é usado para desfazer um commit específico,<br>
+            criando um novo commit que desfaz as alterações introduzidas pelo commit original.</li><br>
+        <li><b>merge:</b><br>O comando merge é usado para mesclar alterações de um ramo para outro.<br>
+            Ele combina o histórico de dois ramos diferentes. Foi utilizado no trabalho digitando<br>
+            <b>git merge "temp"</b> para mesclar as modificações feitas no ramo temporário<br>
+            no ramo principal.</li><br>
+        <li><b>stash:</b><br>Este comando é usado para temporariamente armazenar alterações locais que ainda não estão prontas para serem commitadas.<br>
+            Isso permite que você trabalhe em outra tarefa sem ter que fazer commit das alterações atuais.</li><br>
+        <li><b>rm:</b><br>O comando rm é usado para remover arquivos do índice e do diretório de trabalho.<br>
+            Isso também significa que o arquivo não será mais rastreado pelo Git.</li><br>
+        <li><b>config:</b><br>Este comando é usado para configurar variáveis de configuração do Git.<br>
+            Isso pode incluir informações de usuário, preferências de formatação, configurações de repositório, etc.</li><br>
+        <li><b>reset:</b><br>O comando reset é usado para desfazer alterações no índice e/ou no diretório de trabalho.<br>
+            Ele pode ser usado para desfazer commits, mover a cabeça para um commit específico, ou desfazer alterações no índice.</li><br>
+        <li><b>remote:</b><br>Este comando é usado para gerenciar repositórios remotos. Ele permite que você adicione,<br>
+            remova e liste repositórios remotos associados ao seu repositório local.</li><br>
+        <li><b>fetch:</b><br>O comando fetch é usado para baixar commits, arquivos e referências de um repositório remoto para o repositório local.<br>
+            Isso não mescla automaticamente as alterações com o repositório local.</li><br>
+        <li><b>show:</b><br>Este comando é usado para exibir informações sobre vários objetos Git,<br>
+            como commits, tags, árvores, etc.</li><br>
+        <li><b>help:</b><br>O comando help é usado para obter informações de ajuda sobre os comandos Git.<br>
+            Ele exibe informações sobre como usar os comandos Git e suas opções.</li><br>
+        <li><b>rebase:</b><br>O comando rebase é usado para alterar a base de um ramo. Isso move os commits de um ramo para o início de outro ramo,<br>reescrevendo o histórico de commits.</li><br>
+        <li><b>blame:</b><br>Este comando é usado para exibir quem modificou cada linha de um arquivo e em qual commit a modificação foi feita.</li><br>
+        <li><b>tag:</b><br>O comando tag é usado para criar, listar ou excluir tags no repositório Git.<br>
+            As tags são usadas para marcar commits específicos como versões ou pontos de referência importantes.</li><br>    
+    </ol>
+
+    <h3>Comandos Git Usados.</h3>
+    <p>-Clique no link abaixo para acessar um video que mostra, de maineira mais detalhada <br>os comandos Git utilizados.
+    </p>
+    <a href="video.html">Clique aqui.</a>
+    
+    <h3>Github <img src="img/github_img.png" width="50" height="50"></h3>
+    <p><b>Para configurar o GitHub, siga estes passos:</b></p>
+   
+    <table border="1">
+        <tr>
+          <td>1. Crie uma conta no <a href="https://github.com/" target="_blank">GitHub</a>.</td>
+        </tr>
+        <tr>
+          <td>2. Crie um novo repositório.</td>
+        </tr>
+        <tr>
+          <td>3. Clone o repositório em seu computador local usando <i>git clone</i>.</td>
+        </tr>
+        <tr>
+          <td>4. Adicione e modifique arquivos no repositório local.</td>
+        </tr>
+        <tr>
+          <td>5. Adicione arquivos ao índice do Git usando <i>git add</i>.</td>
+        </tr>
+        <tr>
+          <td>6. Confirme as alterações com <i>git commit</i>.</td>
+        </tr>
+        <tr>
+          <td>7. Envie as alterações para o repositório remoto no GitHub com <i>git push</i>.</td>
+        </tr>
+    </table>
+    
+    <h3>Agradecimentos e créditos.</h3>
+    <p><small>-Esta é a página onde é mostrado quem foram os deselvolvedores.</small></p>
+    <p><a href="audio.html">Clique aqui</a> para ir à pagina de agradecimento.</p>
+</body>
+</html>
