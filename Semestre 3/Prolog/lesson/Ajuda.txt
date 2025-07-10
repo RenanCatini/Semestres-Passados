@@ -1,0 +1,24 @@
+Compilar: swipl arquivo.pl
+
+Recompilar: [arquivo].   
+
+Backtracking: ;
+
+Sair: halt.
+
+Debug:  trace
+    c. : prox chamada
+    s. : salta proximo evento
+    f. : causa falha
+    b. : inicia nova sessao
+    a. : interrompe depuracao
+    notrace. e nodebug. : sair
+
+findall : findall(X,seleciona(_,[1,2,3],X),L).
+between(Inicio, Fim, ValoresEntre).
+forall(Controle, Do).
+maplist()
+
+
+retract(num(X)). 
+    apaga itens da base de dados 

@@ -1,0 +1,9 @@
+// Compilação   : ghci arquivo.hs
+
+// Recompilacao : :l nome_do_arquivo.hs
+
+// Limpar terminal: :! cls
+
+// Recarregar módulo: :r 
+
+// Sair do ghci: :q 

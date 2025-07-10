@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-SAT → Subset-Sum</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            max-width: 80%;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            color: #f1c40f;
+            font-size: 2em;
+        }
+        .highlight {
+            color: #1abc9c;
+            font-weight: bold;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Se 3-SAT tem solução, então Subset-Sum também tem</h1>
+        <p><span class="highlight">🔹 Ideia principal:</span> Se conseguimos satisfazer uma expressão booleana, também podemos formar um subconjunto que atinge a soma-alvo.</p>
+        <p><span class="highlight">✅ Passo 1:</span> Atribuímos valores às variáveis (true/false).</p>
+        <p><span class="highlight">✅ Passo 2:</span> Escolhemos números correspondentes: <code>y<sub>i</sub></code> para <i>true</i> e <code>z<sub>i</sub></code> para <i>false</i>.</p>
+        <p><span class="highlight">✅ Passo 3:</span> Cada cláusula tem pelo menos um literal verdadeiro, garantindo a soma correta.</p>
+        <p><span class="highlight">🎯 Conclusão:</span> Como conseguimos formar um subconjunto cuja soma atinge <code>t</code>, então Subset-Sum também tem solução.</p>
+    </div>
+</body>
+</html>s
